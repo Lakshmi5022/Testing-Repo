@@ -1,0 +1,130 @@
+@font-face {font-family: avenir-black;src: url('../fonts/avenir_ff/AvenirLTStd-Black.otf'); }
+@font-face {font-family: avenir-Book;src: url('../fonts/avenir_ff/AvenirLTStd-book.otf'); }
+@font-face {font-family: avenir-roman;src: url('../fonts/avenir_ff/AvenirLTStd-roman.otf'); }
+@font-face {font-family: JosefinSans-Bold;src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf'); }
+body{background:#f4f4f4; }
+.header_top {background: #7b72af;position: fixed;width: 100%;z-index: 999;top: 0;left: 0;}
+.header_top .logo h2 {color: #fff;padding-left: 29px;font-size: 27px;font-weight: 100;font-family: avenir-roman;padding-top: 23px;padding-bottom: 22px;}
+.header_top .headerTxt p {color: #fff;font-size: 18px;font-weight: 100;font-family: avenir-Book;padding-top: 27px;text-align: center;padding-bottom: 18px;}
+.profile_info {float: right;text-align: center;width: 200px;}
+.profile_info a {float: left;margin: auto;padding: 25px 5px 26px 5px;margin: 0px 11px;}
+.profile_info a span i{color: #fff;}
+a.profile_moreInfo p img {border-radius: 18px;width: 40px;height: 40px;margin: 15px 0px;}
+a.profile_moreInfo p.userNm {color: #fff;font-size: 13px;font-weight: 100;font-family: avenir-Book, sans-serif;margin-top: -16px;text-align: center;padding: 0px;}
+a.profile_moreInfo {padding: 0;}
+.header_tp_inner .row {margin: 0;}
+.main_container .row {margin: 0;}
+.rightSiderBar a{float: left; padding: 10px; margin:10px; font-size:25px;  }
+.sider_brOuter{position:relative;}
+.sider_brOuter .sider_br{ position: absolute; }
+.sider_brOuter .sider_br {position: fixed;left: 0;top: 76px;height: calc(100% - 76px);; width: 25%; box-shadow: -2px 2px 14px #777; z-index: 9; background: #fff;}
+.main_container {margin-top: 77px;}
+.chatFriendList {overflow-y: scroll;height: calc(100% - 51px);}
+.rightSiderBar{position: fixed; background: #fff;right: 0;top: 76px;height: calc(100% - 76px); width: 25%; box-shadow: 2px 2px 14px #777; z-index: 9;}
+.filter_white{filter: invert(0%) sepia(0%) saturate(7441%) hue-rotate(396deg) brightness(241%) contrast(251%);}
+.tab {overflow: hidden;background-color: transparent;}
+
+.tab button {background-color: inherit;float: left;border: none;outline: none;cursor: pointer;padding: 7px 0px 14px 0px;transition: 0.3s;font-size: 17px;color: #1C1C1E;font-family: avenir-book;font-weight: 100;}
+.tab button.active {border-bottom:  4px solid #7b72af;  font-family: avenir-Black;}
+.tabcontent {display: none;padding: 6px;border-top: none;}
+.main_dvBoxTb .tablinks{ width:50%; border-bottom:  4px solid transparent; background: #ededed;}
+.main_dvBoxOuter{background: #f4f4f4;}
+.tabInnerBox {background: #fff;padding: 20px;border-radius: 7px;margin: 15px 0px;}
+.tabInnerBox h3 {color: #2C2C2E;font-size: 17px;position: relative;font-family: avenir-Black ;}
+.tabInnerBox p {color: #2C2C2E;font-size: 14px;font-family: avenir-book ; }
+button.tablinks.frstBtn span {background: #000;height: 60px;width: 3px;}
+button.tablinks.frstBtn {position: relative;}
+button.tablinks.frstBtn span {background: #b0b0b0;height: 33px;width: 1px;font-size: 0px;position: absolute;right: -1px;top: 6px;}
+.tabInnerBox img {margin: 13px 0;width: 100%;}
+ul.menuSiderbr li a {padding: 8px 0px 9px 0px;display: block;border-left: 4px solid transparent;color: #1C1C1E;font-size: 18px;font-family: avenir-Book;padding-left: 35.5px;}
+ul.menuSiderbr li a:hover {    border-left: 4px solid #7b72af;background: #f1f0fa;}
+ul.menuSiderbr li a.active{border-left: 4px solid #7b72af;background: #f1f0fa;} 
+ul.menuSiderbr {margin-top: 30px;}
+ul.menuSiderbr li a span {margin-left: 20.5px;}
+span.imgSpn {width: 28px;height: 12px;display: inline-block;text-align: center;}
+.reminder {width: 16px!important;height: 20px;position: absolute;right: -5px;top: -19px;}
+.mobileNavMenu{display: none;}
+#navMobile{display: none; position:fixed;}
+button#navMobileOpn img {  width: 25px;    height: 25px;}
+button#navMobileOpn { width: 50px; padding: 10px; height: 46px; margin-left: -10px;}
+.chatHeadingTx{ font-size:15px; font-family: avenir-Black ; padding:24px 12px 12px 12px;}
+.chatHeadingTx img{ width: 12px; height: 16px;margin-right: 8px;  vertical-align: middle;  margin-top: -2px;}
+.chatProfileImg{float: left; width:50px ; height: 50px; position: relative; }
+.chatLiveStatus{position: absolute; width:10px ; height: 10px; bottom: 0px; right:3px ; background-color:#41BE13; border-radius:50px ;}
+.chatProfileImg img{ border-radius: 50px; width:100%; height: 100%;}
+.chatProfileDetail{float: left; padding: 4px; }
+.chatProfileDetail h2{font-size:14px ; font-family: avenir-Black ; color:#1C1C1E; }
+.chatProfileDetail h2 span {right: 8px;top: 20px;font-family: avenir-book;color: #AEAEB2;position: absolute;font-size: 10px;}
+.chatProfileDetail p{font-size:14px ; font-family: avenir-book ;margin-top: 4px; color:#1C1C1E;}
+.chatList {margin: 12px;padding: 12px 8px;clear: both;height: 74px; background: #F4F4F4 0% 0% no-repeat padding-box; position: relative;border-radius: 10px;}
+.chatMsgOpnBtn {position: absolute;bottom: 24px;right: 12px;padding: 0px!important;margin: 0px !important;}
+
+.profilePic {text-align: center;margin: 30px 0px;width: 100%;}
+img.usrprifilepic {border-radius: 50px;width: 120px;height: 120px;}
+.profilePic a {display: inline-block;}
+.profileHeadingTx{ font-size:14px; font-family: avenir-Black ; padding:24px 12px 0px 12px;}
+.profileHeadingTx img{ width: 12px; height: 16px;margin-right: 8px;  vertical-align: middle;  margin-top: -5px;}
+.profileDtlList {margin:12px 0px;padding: 12px 12px;clear: both; background: #ffffff 0% 0% no-repeat padding-box;display: grid; position: relative;border-radius: 10px;}
+.usrDtlBasic ul li { float: left; font-size: 14px;margin-right: 15px; font-family: avenir-book;}
+.usrDtlBasic {   margin-top: 5px;}
+p.topBld {font-size: 14px;font-family: avenir-Black;color: #1C1C1E;}
+.usrDtlBasic li img {margin-top: -4px;margin-right: 4px;}
+p.topLight {font-size: 14px;font-family: avenir-book;color: #1C1C1E;}
+.parentsDtl{position: relative;}
+.picParent{ width: 50px;height: 50px; border-radius: 50px;position: absolute;right:12px ; top: 12px; }
+.changePassBtn{ padding: 20px 0px; }
+.changePassBtn button{ padding: 11px; font-size:14px ; color: #7B72AF; border: 1px solid #7B72AF; border-radius: 5px; width: 100%; font-family: avenir-book; }
+.userparentsDtl{background-color: #FFFFFF; border-radius: 10px;}
+.rightSiderBar .tabcontent{padding: 0px;}
+.main_dvBox .chatList{background-color: #ffffff;}
+.popupPhoneNumberEdit{position: fixed; top: 0px; left: 0px; background-color:rgba(0,0,0,0.5) ; width: 100%; height: 100%; z-index: 999;display: none;}
+.editPhn_pop{background: #fff; border-radius: 5px; width: 390px;  margin: 13% auto; padding:32px ;max-height: 96%; overflow-y: scroll;}
+.editPhn_pop  .chatHeadingTx{text-align: left; font-size: 13px; font-family: avenir-Black; padding:0px; text-transform: uppercase;}
+.editPhn_pop  .chatHeadingTx i{margin-right: 9px;font-size: 15px;}
+.editPhn_pop  label{text-transform: uppercase; font-size: 12px;font-family: avenir-book; color: #8E8E93; }
+.editPhn_pop  .nmbTypo{padding: 0px;}
+.editPhn_pop  .nmbTypo::placeholder { color: #EBEBEB;  }
+.loginCancelBtn{border-radius: 5px; border: 1px solid #7B72AF; color: #7B72AF; text-transform: uppercase; padding: 11px; width: 100%;font-size: 14px;}
+.editPhn_pop   .login100Btn{padding: 11px;}
+.popupEnterOtpEdit{position: fixed; top: 0px; left: 0px; background-color:rgba(0,0,0,0.5) ; width: 100%; height: 100%; z-index: 999;display: none;}
+.popupChangPass{position: fixed; top: 0px; left: 0px; background-color:rgba(0,0,0,0.5) ; width: 100%; height: 100%; z-index: 999; display: none;}
+.popupAddressEdit{position: fixed; top: 0px; left: 0px; background-color:rgba(0,0,0,0.5) ; width: 100%; height: 100%; z-index: 999; }
+.popupChangPass .editPhn_pop{ margin: 1% auto; }
+.popupAddressEdit .editPhn_pop{ margin: 1% auto; }
+.cardTxt p {display: flex;flex-direction: row;align-content: space-between;color:"red";}
+
+@media (max-width: 1080px) {
+ul.menuSiderbr li a{padding-left: 0px; font-size:13px;}
+.tabInnerBox h3{font-size:14px;}
+.tabInnerBox p{font-size:10px;}
+.reminder{height:12px;}
+.tab.main_dvBoxTb button{font-size:12px;}
+.rightSiderBar a{padding: 7px; margin: 3px; font-size:18px;}
+
+
+}
+
+@media (max-width: 767px) {
+.mobileNavMenu{display: block;}
+.webNavMenu{display: none; border-radius: 0px 0px 8px 8px;}
+.nav_right_mm{ width:40%; float: left;}
+.nav_cntr_mm{ width:35%; float: left;}
+.nav_icon_mm{ width:25%; float: left;  }
+.profile_info {    width: auto;}
+.sider_br , .rightSiderBar{   display: none;}
+.header_top .headerTxt p{padding: 9px; margin-top: 6px;}
+.profile_info a {  float: left;  margin: 4px 5px;  padding: 10px 6px;}
+.intro5{display: block!important;}
+.main_container {    margin-top: 135px;}
+div#navMobileInner {  background: #fff;  top: 0;  left: 0;  width: 70%;position: fixed; height: 100%;} 
+.navClose{background:rgba(0,0,0,0.5); position: fixed;top: 0px; left: 0px; width: 100%; height: 100%; }
+#navMobile{z-index: 9;}
+.mobile_HdrBtmLft{ float: left; width: 40%; }
+.mobile_HdrBtmRgt{ float: left; width: 60%; }
+.mobile_HdrBtmRgt img { width: 200px;  float: right;}
+.mobile_HdrBtmLft p { text-align: left; color: #fff; margin-top: 21px;  margin-left: 19%;}
+}	
+
+@media (max-width: 480px) {
+.mobile_HdrBtmRgt img { width: 180px;  float: right;}
+}	
